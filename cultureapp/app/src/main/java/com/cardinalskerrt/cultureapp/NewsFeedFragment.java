@@ -42,7 +42,7 @@ public class NewsFeedFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment NewsFeedFragment.
-     */
+//     */
     // TODO: Rename and change types and number of parameters
     public static NewsFeedFragment newInstance(String param1, String param2) {
         NewsFeedFragment fragment = new NewsFeedFragment();
