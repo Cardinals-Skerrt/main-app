@@ -26,6 +26,7 @@ public class UserScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_screen);
 
+        //hey comment
         userViewPager = findViewById(R.id.userViewPager);
         userTablayout = findViewById(R.id.userTabLayout);
         userNewsFeedTab = findViewById(R.id.userNewsfeedTab);
