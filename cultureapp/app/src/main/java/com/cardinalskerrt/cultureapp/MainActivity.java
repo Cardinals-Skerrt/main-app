@@ -1,11 +1,12 @@
 package com.cardinalskerrt.cultureapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageView startLogo;
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
         startLogo.startAnimation(fadeIn);
+
+        Intent intent = new Intent(this, LoginActivity  .class);
+        startActivity(intent);
     }
 }
