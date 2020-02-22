@@ -28,13 +28,13 @@ public class NewsFeedFragment extends Fragment {
     public NewsFeedFragment() {
         // Required empty public constructor
     }
-
+//////
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
      * @return A new instance of fragment NewsFeedFragment.
-//     */
+     */
     // TODO: Rename and change types and number of parameters
     public static NewsFeedFragment newInstance() {
         NewsFeedFragment fragment = new NewsFeedFragment();
