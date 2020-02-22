@@ -80,7 +80,7 @@ public class UserScreen extends AppCompatActivity implements UserMarketplaceFrag
                 case 0:
                     return UserMarketplaceFragment.newInstance();
                 case 1:
-                    return UserMarketplaceFragment.newInstance();
+                    return NewsFeedFragment.newInstance();
                 case 2:
                     return UserMarketplaceFragment.newInstance();
                 default:
