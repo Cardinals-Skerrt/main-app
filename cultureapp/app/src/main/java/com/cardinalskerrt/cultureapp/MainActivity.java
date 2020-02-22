@@ -21,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
         startLogo.startAnimation(fadeIn);
 
+        //test 
+
     }
 }
