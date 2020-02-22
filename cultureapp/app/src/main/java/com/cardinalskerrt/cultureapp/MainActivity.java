@@ -1,14 +1,14 @@
 package com.cardinalskerrt.cultureapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class MainActivity extends AppCompatActivity {
     ImageView startLogo;
 
     @Override
@@ -23,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         //test 
 
+        Intent intent = new Intent(this, LoginActivity  .class);
+        startActivity(intent);
     }
 }
