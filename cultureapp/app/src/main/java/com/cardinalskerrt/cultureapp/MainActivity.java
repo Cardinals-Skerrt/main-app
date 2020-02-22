@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startLogo = findViewById(R.id.startLogo);
-
-        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
-        startLogo.startAnimation(fadeIn);
+//        startLogo = findViewById(R.id.startLogo);
+//
+//        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
+//        startLogo.startAnimation(fadeIn);
 
         //test 
 
