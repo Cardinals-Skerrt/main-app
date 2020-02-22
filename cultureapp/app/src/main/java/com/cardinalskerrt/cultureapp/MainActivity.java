@@ -1,6 +1,7 @@
 package com.cardinalskerrt.cultureapp;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -21,7 +22,22 @@ public class MainActivity extends AppCompatActivity {
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
         startLogo.startAnimation(fadeIn);
 
-        Intent intent = new Intent(this, LoginActivity  .class);
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                goToIntent();
+            }
+        });
+    }
+
+    void goToIntent(){
+        Intent intent = new Intent(this, UserScreen.class);
         startActivity(intent);
     }
+
 }

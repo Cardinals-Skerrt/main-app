@@ -7,12 +7,18 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
-public class UserScreen extends AppCompatActivity {
+public class UserScreen extends AppCompatActivity implements UserMarketplaceFragment.OnFragmentInteractionListener {
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 
     ViewPager userViewPager;
     PageAdapter userPageAdapter;
@@ -70,7 +76,16 @@ public class UserScreen extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             //TODO return the fragments
-            return null;
+            switch (position){
+                case 0:
+                    return UserMarketplaceFragment.newInstance();
+                case 1:
+                    return UserMarketplaceFragment.newInstance();
+                case 2:
+                    return UserMarketplaceFragment.newInstance();
+                default:
+                    return null;
+            }
         }
 
         @Override
