@@ -14,11 +14,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="350dp"
+            android:layout_height="400dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
 
-            app:cardCornerRadius="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -41,10 +40,11 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="14dp"
-                    android:textStyle="bold"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-light"
                     android:text="Juan Dela Truze"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,11 +78,24 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_width="391dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="New rattan bags comming next week!"
+                    android:text="New rattan bags comming next week! Stay tuned for exclusive discounts  every new release!"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Rattan Bags almost finished! :)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
