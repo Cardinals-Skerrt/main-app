@@ -16,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        startLogo = findViewById(R.id.startLogo);
-//
-//        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
-//        startLogo.startAnimation(fadeIn);
+        startLogo = findViewById(R.id.startLogo);
 
-        //test 
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        startLogo.startAnimation(fadeIn);
 
         AsyncTask.execute(new Runnable() {
             @Override
@@ -37,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void goToIntent(){
-        Intent intent = new Intent(this, UserScreen.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 

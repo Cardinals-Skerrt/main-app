@@ -1,4 +1,7 @@
-package com.cardinalskerrt.cultureapp;
+package com.cardinalskerrt.appv2;
+
+import android.net.Uri;
+import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,13 +10,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.net.Uri;
-import android.os.Bundle;
-
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
-public class UserScreen extends AppCompatActivity implements UserMarketplaceFragment.OnFragmentInteractionListener {
+public class UserScreen extends AppCompatActivity implements MarketplaceFragment.OnFragmentInteractionListener
+        ,NewsFeedFragment.OnFragmentInteractionListener
+        ,UserFragment.OnFragmentInteractionListener{
 
     @Override
     public void onFragmentInteraction(Uri uri) {
@@ -78,11 +80,11 @@ public class UserScreen extends AppCompatActivity implements UserMarketplaceFrag
             //TODO return the fragments
             switch (position){
                 case 0:
-                    return UserMarketplaceFragment.newInstance();
+                    return NewsFeedFragment.newInstance("","");
                 case 1:
-                    return NewsFeedFragment.newInstance();
+                    return MarketplaceFragment.newInstance();
                 case 2:
-                    return UserMarketplaceFragment.newInstance();
+                    return UserFragment.newInstance("","");
                 default:
                     return null;
             }
